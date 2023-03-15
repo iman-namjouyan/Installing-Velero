@@ -15,5 +15,10 @@ Install velero (Base: Minio/Ceph):
 2- Create accesskey and secretkey for access to bucket.
 3- install velero server:
 ```
-velero install --provider aws --bucket velero --secret-file ./minio.credentials --backup-location-config region=minio,s3ForcePathStyle=true,s3Url=http://10.0.85.219:9000 --plugins velero/velero-plugin-for-aws:v1.2.1
+velero install --provider aws \
+--bucket velero \
+--secret-file ./minio.credentials \
+--backup-location-config region=minio,s3ForcePathStyle=true,s3Url=http://10.0.85.219:9000 \
+--plugins velero/velero-plugin-for-aws:v1.2.1
+
 ```
