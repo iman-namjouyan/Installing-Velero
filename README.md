@@ -45,5 +45,5 @@ velero backup create backup1 --include-namespaces=develop #create backup resourc
 
 ![image](https://user-images.githubusercontent.com/16554389/225237414-b51b3bf2-66a8-4df7-a3f7-a38f5ffb1235.png)
 
-- **Note: "velero backup logs backup1", Shows the backup log**
+- Note: "velero backup logs backup1", Shows the backup log
 
