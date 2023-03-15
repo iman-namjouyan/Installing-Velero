@@ -25,3 +25,14 @@ velero install --provider aws \
 --plugins velero/velero-plugin-for-aws:v1.2.1
 
 ```
+![image](https://user-images.githubusercontent.com/16554389/225235494-9c4b2fa3-843d-4787-be80-b5549c9a3d8f.png)
+
+#----------------------------------------- Create Simple Backup
+
+**Create simple backup from "develop" namespace:**
+- velero backup create backup1 --include-namespaces=develop
+- velero backup describe backup1 #Check backup status
+
+![image](https://user-images.githubusercontent.com/16554389/225237414-b51b3bf2-66a8-4df7-a3f7-a38f5ffb1235.png)
+
+- **Note: "velero backup logs backup1", Shows the backup log**
