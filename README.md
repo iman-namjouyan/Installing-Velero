@@ -35,7 +35,10 @@ velero backup download <backup Name> #download specific backup as "tar.gz" file.
 velero backup describe <Backup Name> #show specific backup status
 velero backup delete <Backup Name>   #delete specific backup
 velero backup create <Backup Name>   #cretae backup
-velero backup create backup1 --include-namespaces=develop #create backup resources just from 
+velero backup create backup1 --include-namespaces=develop #create backup resources just from "develp" namespace
+velero backup create backup1 --exclude-namespaces velero,default #create a backup excluding the velero and default namespaces.
+velero backup create backup1 --wait #wait for a backup to complete before returning from the command.
+
 ```
 #----------------------------------------- Create Simple Backup
 
