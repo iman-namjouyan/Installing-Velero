@@ -42,6 +42,8 @@ velero backup create backup1 --wait #wait for a backup to complete before return
 velero restore create backup1 #restore specific backup with "backup1" name
 velero plugin get #get information for all plugins on the velero server
 velero plugin add <Image Name> #add a plugin
+velero schedule create NAME --schedule="* * * * *" [flags] #Schedule a Backup
+Example: velero schedule create NAME --schedule="30 02 * * * " #create backup every day at 02:30 AM
 ```
 #----------------------------------------- Create Simple Backup
 
