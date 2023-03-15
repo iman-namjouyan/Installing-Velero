@@ -33,8 +33,9 @@ velero backup get #show list backups
 velero backup logs <Backup Name>     #show log for specific backup
 velero backup download <backup Name> #download specific backup as "tar.gz" file.
 velero backup describe <Backup Name> #show specific backup status
-
-
+velero backup delete <Backup Name>   #delete specific backup
+velero backup create <Backup Name>   #cretae backup
+velero backup create backup1 --include-namespaces=develop #create backup resources just from 
 
 #----------------------------------------- Create Simple Backup
 
