@@ -27,6 +27,15 @@ velero install --provider aws \
 ```
 ![image](https://user-images.githubusercontent.com/16554389/225235494-9c4b2fa3-843d-4787-be80-b5549c9a3d8f.png)
 
+#----------------------------------------- Velero useful commands
+```
+velero backup get #show list backups
+velero backup logs <Backup Name>     #show log for specific backup
+velero backup download <backup Name> #download specific backup as "tar.gz" file.
+velero backup describe <Backup Name> #show specific backup status
+
+
+
 #----------------------------------------- Create Simple Backup
 
 **Create simple backup from "develop" namespace:**
@@ -36,3 +45,4 @@ velero install --provider aws \
 ![image](https://user-images.githubusercontent.com/16554389/225237414-b51b3bf2-66a8-4df7-a3f7-a38f5ffb1235.png)
 
 - **Note: "velero backup logs backup1", Shows the backup log**
+
