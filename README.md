@@ -34,11 +34,14 @@ velero backup logs <Backup Name>     #show log for specific backup
 velero backup download <backup Name> #download specific backup as "tar.gz" file.
 velero backup describe <Backup Name> #show specific backup status
 velero backup delete <Backup Name>   #delete specific backup
-velero backup create <Backup Name>   #cretae backup
+velero backup create <Backup Name>   #create backup
+velero create backup backup3 --snapshot-volumes  #create backup with snapshot
 velero backup create backup1 --include-namespaces=develop #create backup resources just from "develp" namespace
 velero backup create backup1 --exclude-namespaces velero,default #create a backup excluding the velero and default namespaces.
 velero backup create backup1 --wait #wait for a backup to complete before returning from the command.
-
+velero restore create backup1 #restore specific backup with "backup1" name
+velero plugin get #get information for all plugins on the velero server
+velero plugin add <Image Name> #add a plugin
 ```
 #----------------------------------------- Create Simple Backup
 
