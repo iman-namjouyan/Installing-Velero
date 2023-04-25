@@ -10,11 +10,12 @@
 ```
 ![image](https://user-images.githubusercontent.com/16554389/225233147-e34c2974-f884-45fd-b023-38a48e70cc82.png)
 
+```
 Install velero (Base: Minio/Ceph):
 1- Create bucket on minio or ceph.
 2- Create accesskey and secretkey for access to bucket.
 3- install velero server:
-
+```
 **Note: This sample In the example below, velero server is configured based on Minio.**
 
 ```
