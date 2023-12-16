@@ -1,4 +1,4 @@
-# Velero
+# Installing Velero
 **Install velero:**
 ```
 1- download velero cli from https://github.com/vmware-tanzu/velero/releases/download/v1.10.2/velero-v1.10.2-linux-amd64.tar.gz
